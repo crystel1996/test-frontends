@@ -9,3 +9,11 @@
     align-self: stretch;
 
 }
+
+.navbarContent {
+    display: flex;
+    padding: 6px 4px;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
