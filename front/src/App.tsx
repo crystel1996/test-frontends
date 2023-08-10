@@ -1,13 +1,10 @@
 import React from 'react';
+import Premium from './Pages/Premium';
 
 function App() {
   return (
    
-    <div className="pure-g">
-        <div className="pure-u-1-3"><p>Thirds</p></div>
-        <div className="pure-u-1-3"><p>Thirds</p></div>
-        <div className="pure-u-1-3"><p>Thirds</p></div>
-    </div>
+    <Premium />
 
   );
 }
