@@ -1,0 +1,11 @@
+.navbar {
+
+    display: flex;
+    padding: 8px 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    flex: 1 0 0;
+    align-self: stretch;
+
+}
