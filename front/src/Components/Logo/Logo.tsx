@@ -1,8 +1,11 @@
 import React, { FC } from 'react';
 import { LogoComponentInterface } from './interface';
+import { LogoImage } from './LogoImage';
 
 export const Logo: FC<LogoComponentInterface> = () => {
 
-    return <></>
+    return <div>
+        <LogoImage />
+    </div>
 
 }
