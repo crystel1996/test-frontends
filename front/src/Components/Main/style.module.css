@@ -8,3 +8,7 @@
     overflow-y: auto;
     color: var(--grayscale-n-600, #4C4C55);
 }
+
+.mainItem {
+    width: 75%;
+}

@@ -8,10 +8,12 @@ import { Information } from '../Information';
 export const Main: FC<MainComponentInterface> = () => {
 
     return <div className={classNames(style.mainContent)}>
-        <div>
-            <Alert />
-            <Information />
-        </div>
+    
+            <div className={classNames(style.mainItem)}>
+                <Alert />
+                <Information />
+        
+            </div>
 
     </div>
 
