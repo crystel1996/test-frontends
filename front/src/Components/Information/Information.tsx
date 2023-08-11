@@ -9,59 +9,61 @@ export const Information: FC<InformationComponentInterface> = () => {
     return <div className={style.informationContent}>
         <form className="pure-form">
             <fieldset>
-                <legend className={style.legendText}>Personal Information</legend>
-                <div className='pure-u-12-24'>
-                    <div>
-                        <div className='pure-u-12-24'>
-                            <label htmlFor='firstName'>First Name</label>
-                            <input type="text" id="firstName" placeholder="Peter" />
+                <div className="pure-g">
+                    <legend className={style.legendText}>Personal Information</legend>
+                    <div className='pure-u-12-24'>
+                        <div>
+                            <div className='pure-u-12-24'>
+                                <label htmlFor='firstName'>First Name</label>
+                                <input type="text" id="firstName" placeholder="Peter" />
+                            </div>
+                            <div className='pure-u-12-24'>
+                                <label htmlFor='lastName'>Last Name</label>
+                                <input type="text" id="lastName" placeholder="Peter" />
+                            </div>
                         </div>
-                        <div className='pure-u-12-24'>
-                            <label htmlFor='lastName'>Last Name</label>
-                            <input type="text" id="lastName" placeholder="Peter" />
+                        <div>
+                            <div className='pure-u-12-24'>
+                                <label htmlFor='city'>City</label>
+                                <input type="text" id="city" placeholder="London" />
+                            </div>
+                            <div className='pure-u-12-24'>
+                                <label htmlFor='postalCode'>Postal Code</label>
+                                <input type="text" id="postalCode" placeholder="E2 4XF" />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='pure-u-24-24'>
+                                <label htmlFor='adress'>Adress</label>
+                                <input type="text" id="adress" placeholder="123 Example" />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='pure-u-12-24'>
+                                <label htmlFor='email'>Email</label>
+                                <input type="email" id="email" placeholder="petter@gmail.com" />
+                            </div>
+                            <div className='pure-u-12-24'>
+                                <label htmlFor='phone'>Phone</label>
+                                <input type="tel" id="phone" placeholder="+442223334444" />
+                            </div>
+                        </div>
+                        <div>
+                            <div className='pure-u-12-24'>
+                                <label htmlFor='password'>Password</label>
+                                <input type="password" id="password" placeholder="Password" />
+                            </div>
+                        </div>
+                        <div>
+                            <p>Use this email to log in to your <a href="#" className={style.primary}>resumedone.io</a> account and receive notifications.</p>
+                        </div>
+                        <div>
+                            <button className='pure-button pure-button-primary button-large'>Save</button>
                         </div>
                     </div>
-                    <div>
-                        <div className='pure-u-12-24'>
-                            <label htmlFor='city'>City</label>
-                            <input type="text" id="city" placeholder="London" />
-                        </div>
-                        <div className='pure-u-12-24'>
-                            <label htmlFor='postalCode'>Postal Code</label>
-                            <input type="text" id="postalCode" placeholder="E2 4XF" />
-                        </div>
+                    <div className='pure-u-12-24'>
+                        <img className={style.profilePictureInformation} src={profile_picture} alt="Profile picture" />
                     </div>
-                    <div>
-                        <div className='pure-u-24-24'>
-                            <label htmlFor='adress'>Adress</label>
-                            <input type="text" id="adress" placeholder="123 Example" />
-                        </div>
-                    </div>
-                    <div>
-                        <div className='pure-u-12-24'>
-                            <label htmlFor='email'>Email</label>
-                            <input type="email" id="email" placeholder="petter@gmail.com" />
-                        </div>
-                        <div className='pure-u-12-24'>
-                            <label htmlFor='phone'>Phone</label>
-                            <input type="tel" id="phone" placeholder="+442223334444" />
-                        </div>
-                    </div>
-                    <div>
-                        <div className='pure-u-12-24'>
-                            <label htmlFor='password'>Password</label>
-                            <input type="password" id="password" placeholder="Password" />
-                        </div>
-                    </div>
-                    <div>
-                        <p>Use this email to log in to your <a href="#" className={style.primary}>resumedone.io</a> account and receive notifications.</p>
-                    </div>
-                    <div>
-                        <button className='pure-button pure-button-primary button-large'>Save</button>
-                    </div>
-                </div>
-                <div className='pure-u-12-24'>
-                    <img className={style.profilePictureInformation} src={profile_picture} alt="Profile picture" />
                 </div>
             </fieldset>
         </form>

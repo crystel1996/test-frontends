@@ -10,8 +10,6 @@ export const Main: FC<MainComponentInterface> = () => {
     return <div className={classNames(style.mainContent)}>
         <div>
             <Alert />
-        </div>
-        <div>
             <Information />
         </div>
 

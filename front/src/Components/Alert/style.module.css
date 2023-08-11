@@ -1,6 +1,6 @@
 .alertContent {
     display: flex;
-    width: 800px;
+    width: auto;
     padding: 24px;
     align-items: center;
     gap: 16px;

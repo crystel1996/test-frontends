@@ -1,5 +1,7 @@
 .informationContent {
     color: var(--grayscale-n-600, #4C4C55);
+    display: flex;
+    flex-direction: column;
 }
 
 .legendText {
