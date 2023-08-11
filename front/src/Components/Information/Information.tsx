@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { InformationComponentInterface } from './interface';
 import profile_picture from './../../Assets/profile-picture.png'
 import style from './style.module.css'
+import classNames from 'classnames';
 
 export const Information: FC<InformationComponentInterface> = () => {
 
@@ -47,7 +48,7 @@ export const Information: FC<InformationComponentInterface> = () => {
                         </div>
                     </div>
                     <div>
-                        <p>Use this email to log in to your <span className={style.primary}>resumedone.io</span> account and receive notifications.</p>
+                        <p>Use this email to log in to your <a href="#" className={style.primary}>resumedone.io</a> account and receive notifications.</p>
                     </div>
                     <div>
                         <button className='pure-button pure-button-primary button-large'>Save</button>
@@ -62,20 +63,37 @@ export const Information: FC<InformationComponentInterface> = () => {
         <div>
             <label htmlFor='check'>            
                 <input type="checkbox" id="check" />
-                Show my profile to serious employers on <span className={style.primary}>hirethesbest.io</span> for free
+                Show my profile to serious employers on <a href="#" className={style.primary}>hirethesbest.io</a> for free
             </label>
         </div>
 
         <div className={style.deleteContent}>
             <p className={style.deleteContentTitle}>Delete Account</p>
             <p>If you delete your account you’ll be permanently removing it from our systems - you can’t undo it.</p>
-            <p className={style.error}>Yes, Delete my account</p>
+            <a href="#" className={style.error}>Yes, Delete my account</a>
         </div>
 
         <div>
             <p>
-                <span className={style.primary}>Get in touch with our support team</span> if you have any question or want to leave some feedback.
+                <a href="#" className={style.primary}>Get in touch with our support team</a> if you have any question or want to leave some feedback.
 We’ll be happy to hear from you.</p>
+        </div>
+
+        <div className={classNames('pure-menu pure-menu-horizontal', style.footerContent)}>
+            <ul  className="pure-menu-list pure-u-g">
+                <li className='pure-menu-item'>
+                    <a href="#" className='pure-menu-link'>Terms & Conditions</a>
+                </li>
+                <li className='pure-menu-item'>
+                    <a href="#" className='pure-menu-link'>Privacy Policy</a>
+                </li>
+                <li className='pure-menu-item'>
+                    <a href="#" className='pure-menu-link'>FAQ</a>
+                </li>
+                <li className='pure-menu-item'>
+                    <a href="#" className='pure-menu-link'>Contact Us</a>
+                </li>
+            </ul>
         </div>
 
     </div>

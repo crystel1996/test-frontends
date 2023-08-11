@@ -46,3 +46,8 @@ label {
     font-weight: bold;
     line-height: 24px; 
 }
+
+.footerContent {
+    border-top: 1px solid var(--grayscale-n-200, #E3E3E4);
+    padding: 16px 0;
+}

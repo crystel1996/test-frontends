@@ -15,23 +15,6 @@ export const Main: FC<MainComponentInterface> = () => {
             <Information />
         </div>
 
-        <div>
-            <ul>
-                <li>
-                    <a href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                    <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-                <li>
-                    <a href="#">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-
     </div>
 
 }

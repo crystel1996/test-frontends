@@ -6,4 +6,5 @@
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
+    color: var(--grayscale-n-600, #4C4C55);
 }
