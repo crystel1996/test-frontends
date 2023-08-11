@@ -3,6 +3,7 @@ import { SidebarComponentInterface } from './interface';
 import { Logo } from '../Logo';
 import style from './style.module.css';
 import { Navbar } from '../Navbar';
+import { Account } from '../Account';
 
 export const Sidebar: FC<SidebarComponentInterface> = () => {
 
@@ -13,6 +14,10 @@ export const Sidebar: FC<SidebarComponentInterface> = () => {
         </div>
 
         <Navbar />
+
+        <div>
+            <Account />
+        </div>
 
     </div>
 
