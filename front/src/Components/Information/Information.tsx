@@ -10,12 +10,12 @@ export const Information: FC<InformationComponentInterface> = () => {
             <fieldset>
                 <legend className={style.legendText}>Personal Information</legend>
                 <div className='pure-u-12-24'>
-                    <div className='pure-u-g'>
-                        <div>
+                    <div>
+                        <div className='pure-u-12-24'>
                             <label htmlFor='firstName'>First Name</label>
                             <input type="text" id="firstName" placeholder="Peter" />
                         </div>
-                        <div>
+                        <div className='pure-u-12-24'>
                             <label htmlFor='lastName'>Last Name</label>
                             <input type="text" id="lastName" placeholder="Peter" />
                         </div>
