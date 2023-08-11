@@ -1,9 +1,12 @@
 import React, { FC } from 'react';
 import { ListItemInterface, NavbarItemComponentInterface } from './interface';
 import icon_template from './../../../Assets/icon_template.svg'
-import icon_search from './../../../Assets/icon search.svg'
+import icon_search from './../../../Assets/icon_search.svg'
 import yellow_star from './../../../Assets/yellow_star.svg'
+import icon_board from './../../../Assets/icon_board.svg'
+import icon_board1 from './../../../Assets/board1.svg'
 import group from './../../../Assets/Group.svg'
+import icon_lock from './../../../Assets/lock.svg'
 import style from './style.module.css';
 
 
@@ -21,6 +24,16 @@ const LIST_ITEM: ListItemInterface[] = [
     { libelle: 'Post Search 1', icon: group },
     { libelle: 'Post Search 2', icon: group },
     { libelle: 'Computers and information...', icon: group },
+    { libelle: 'Database Administrator', icon: group },
+    { libelle: 'Computer Security', icon: group },
+    { libelle: 'Computer Systems Analyst', icon: group },
+    { libelle: 'My boards', icon : icon_board },
+    { libelle: 'Board 1', icon : icon_board1 },
+    { libelle: 'Board 2', icon : icon_board1 },
+    { libelle: 'Board 3', icon : icon_board1 },
+    { libelle: 'Board Agent 1', icon : icon_lock },
+    { libelle: 'Board Agent 1', icon : icon_lock },
+    { libelle: 'Board Agent 1', icon : icon_lock },
 ];
 
 export const NavbarItem: FC<NavbarItemComponentInterface> = () => {
