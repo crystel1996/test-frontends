@@ -1,0 +1,18 @@
+.typographyMenuItem {
+
+    color: var(--grayscale-n-900, #14141F);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 8px;
+}
+
+.typographyMenuItemBold {
+    font-weight: bold;
+}
+
+.alignCenter {
+    display: flex;
+    align-items: center;
+}

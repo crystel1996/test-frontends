@@ -8,11 +8,11 @@ import icon_board1 from './../../../Assets/board1.svg'
 import group from './../../../Assets/Group.svg'
 import icon_lock from './../../../Assets/lock.svg'
 import style from './style.module.css';
-
+import classname from 'classnames';
 
 const LIST_ITEM: ListItemInterface[] = [
-    { libelle: 'My templates', icon: icon_template},
-    { libelle: 'Search', icon: icon_search},
+    { libelle: 'My templates', icon: icon_template, isBold: true},
+    { libelle: 'Search', icon: icon_search, isBold: true},
     { libelle: 'Software Engineer', icon: yellow_star },
     { libelle: 'Network Engineer', icon: yellow_star },
     { libelle: 'Computer hardware engineer', icon: yellow_star },
@@ -27,7 +27,7 @@ const LIST_ITEM: ListItemInterface[] = [
     { libelle: 'Database Administrator', icon: group },
     { libelle: 'Computer Security', icon: group },
     { libelle: 'Computer Systems Analyst', icon: group },
-    { libelle: 'My boards', icon : icon_board },
+    { libelle: 'My boards', icon : icon_board, isBold: true },
     { libelle: 'Board 1', icon : icon_board1 },
     { libelle: 'Board 2', icon : icon_board1 },
     { libelle: 'Board 3', icon : icon_board1 },
@@ -43,11 +43,17 @@ export const NavbarItem: FC<NavbarItemComponentInterface> = () => {
         <div className="pure-menu custom-restricted-width">
             <ul className="pure-menu-list">
                 {LIST_ITEM.map((item, index) => {
-                    return <li className="pure-menu-item" key={index}>
+
+                    const className = classname(
+                            style.typographyMenuItem, 
+                            item.isBold ? style.typographyMenuItemBold : undefined
+                    );
+
+                    return <li className={classname("pure-menu-item", style.alignCenter)} key={index}>
                         
                         <img src={item.icon} alt={item.libelle} />
+                        <span className={className}>{item.libelle}</span>
                         
-                        {item.libelle}
                     </li>
                 })}
             </ul>
