@@ -1,6 +1,8 @@
 .mainContent {
     max-height: 100vh;
+    width: 100%;
     padding: 32px;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }

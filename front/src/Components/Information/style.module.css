@@ -1,0 +1,23 @@
+.legendText {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    color:  #14141F;
+}
+
+label {
+    display: block;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.primary {
+    color: #1688FE;
+}
+
+.error {
+    color: var(--additional-colors-red, #F25773);
+}

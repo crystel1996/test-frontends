@@ -1,15 +1,16 @@
 import React, { FC } from 'react';
 import { InformationComponentInterface } from './interface';
 import profile_picture from './../../Assets/profile-picture.png'
+import style from './style.module.css'
 
 export const Information: FC<InformationComponentInterface> = () => {
 
     return <div>
         <form className="pure-form">
             <fieldset>
-                <legend>Personal Information</legend>
-                <div>
-                    <div>
+                <legend className={style.legendText}>Personal Information</legend>
+                <div className='pure-u-12-24'>
+                    <div className='pure-u-g'>
                         <div>
                             <label htmlFor='firstName'>First Name</label>
                             <input type="text" id="firstName" placeholder="Peter" />
@@ -46,13 +47,13 @@ export const Information: FC<InformationComponentInterface> = () => {
                         </div>
                     </div>
                     <div>
-                        <p>Use this email to log in to your <span>resumedone.io</span> account and receive notifications.</p>
+                        <p>Use this email to log in to your <span className={style.primary}>resumedone.io</span> account and receive notifications.</p>
                     </div>
                     <div>
-                        <button>Save</button>
+                        <button className='pure-button pure-button-primary button-large'>Save</button>
                     </div>
                 </div>
-                <div>
+                <div className='pure-u-12-24'>
                     <img src={profile_picture} alt="Profile picture" />
                 </div>
             </fieldset>
@@ -61,19 +62,19 @@ export const Information: FC<InformationComponentInterface> = () => {
         <div>
             <label htmlFor='check'>            
                 <input type="checkbox" id="check" />
-                Show my profile to serious employers on <span>hirethesbest.io</span> for free
+                Show my profile to serious employers on <span className={style.primary}>hirethesbest.io</span> for free
             </label>
         </div>
 
         <div>
             <p>Delete Account</p>
             <p>If you delete your account you’ll be permanently removing it from our systems - you can’t undo it.</p>
-            <p>Yes, Delete my account</p>
+            <p className={style.error}>Yes, Delete my account</p>
         </div>
 
         <div>
             <p>
-                <span>Get in touch with our support team</span> if you have any question or want to leave some feedback.
+                <span className={style.primary}>Get in touch with our support team</span> if you have any question or want to leave some feedback.
 We’ll be happy to hear from you.</p>
         </div>
 
