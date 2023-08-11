@@ -5,7 +5,7 @@ import style from './style.module.css'
 
 export const Information: FC<InformationComponentInterface> = () => {
 
-    return <div>
+    return <div className={style.informationContent}>
         <form className="pure-form">
             <fieldset>
                 <legend className={style.legendText}>Personal Information</legend>
@@ -66,8 +66,8 @@ export const Information: FC<InformationComponentInterface> = () => {
             </label>
         </div>
 
-        <div>
-            <p>Delete Account</p>
+        <div className={style.deleteContent}>
+            <p className={style.deleteContentTitle}>Delete Account</p>
             <p>If you delete your account you’ll be permanently removing it from our systems - you can’t undo it.</p>
             <p className={style.error}>Yes, Delete my account</p>
         </div>

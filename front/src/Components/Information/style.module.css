@@ -1,3 +1,7 @@
+.informationContent {
+    color: var(--grayscale-n-600, #4C4C55);
+}
+
 .legendText {
     font-size: 24px;
     font-style: normal;
@@ -27,4 +31,18 @@ label {
 
 .error {
     color: var(--additional-colors-red, #F25773);
+}
+
+.deleteContent {
+    margin: 16px 0;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--grayscale-n-200, #E3E3E4);
+}
+
+.deleteContentTitle {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px; 
 }
