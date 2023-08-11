@@ -1,0 +1,7 @@
+.mainContent {
+    max-height: 100vh;
+    padding: 32px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
