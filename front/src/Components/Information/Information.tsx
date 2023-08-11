@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { InformationComponentInterface } from './interface';
 import profile_picture from './../../Assets/profile-picture.png'
+import icon_check from './../../Assets/icon_badge_check.svg'
 import style from './style.module.css'
 import classNames from 'classnames';
 
@@ -42,7 +43,11 @@ export const Information: FC<InformationComponentInterface> = () => {
                             <div>
                                 <div className='pure-u-12-24'>
                                     <label htmlFor='email'>Email</label>
-                                    <input type="email" className='pure-u-20-24' id="email" placeholder="petter@gmail.com" />
+                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                        <input type="email" className='pure-u-20-24' id="email" placeholder="petter@gmail.com" />
+                                        <img className={style.checkInputSuccess} src={icon_check} alt="success" />
+                                    </div>
+                                   
                                 </div>
                                 <div className='pure-u-12-24'>
                                     <label htmlFor='phone'>Phone</label>

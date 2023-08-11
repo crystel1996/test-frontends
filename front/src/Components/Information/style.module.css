@@ -27,6 +27,11 @@ label {
     font-size: 110%;
 }
 
+.checkInputSuccess {
+    margin-left: -20px;
+    align-items: center;
+}
+
 .primary {
     color: #1688FE;
 }
