@@ -11,3 +11,7 @@ body {
 legend {
     border-bottom: none !important;
 }
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}

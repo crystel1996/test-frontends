@@ -22,27 +22,33 @@ export const Information: FC<InformationComponentInterface> = () => {
                         </div>
                     </div>
                     <div>
-                        <div>
+                        <div className='pure-u-12-24'>
                             <label htmlFor='city'>City</label>
                             <input type="text" id="city" placeholder="London" />
                         </div>
-                        <div>
+                        <div className='pure-u-12-24'>
                             <label htmlFor='postalCode'>Postal Code</label>
                             <input type="text" id="postalCode" placeholder="E2 4XF" />
                         </div>
                     </div>
                     <div>
-                        <div>
+                        <div className='pure-u-24-24'>
                             <label htmlFor='adress'>Adress</label>
                             <input type="text" id="adress" placeholder="123 Example" />
                         </div>
                     </div>
                     <div>
-                        <div>
+                        <div className='pure-u-12-24'>
                             <label htmlFor='email'>Email</label>
                             <input type="email" id="email" placeholder="petter@gmail.com" />
                         </div>
-                        <div>
+                        <div className='pure-u-12-24'>
+                            <label htmlFor='phone'>Phone</label>
+                            <input type="tel" id="phone" placeholder="+442223334444" />
+                        </div>
+                    </div>
+                    <div>
+                        <div className='pure-u-12-24'>
                             <label htmlFor='password'>Password</label>
                             <input type="password" id="password" placeholder="Password" />
                         </div>
