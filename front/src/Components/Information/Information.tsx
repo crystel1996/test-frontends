@@ -54,7 +54,7 @@ export const Information: FC<InformationComponentInterface> = () => {
                     </div>
                 </div>
                 <div className='pure-u-12-24'>
-                    <img src={profile_picture} alt="Profile picture" />
+                    <img className={style.profilePictureInformation} src={profile_picture} alt="Profile picture" />
                 </div>
             </fieldset>
         </form>
